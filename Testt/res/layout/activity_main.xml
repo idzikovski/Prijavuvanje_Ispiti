@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Корисничко име"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+   
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtUsername"
+        android:layout_marginTop="20dp"
+        android:text="Лозинка"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="15dp"
+        android:text="Логирај се" 
+        android:onClick="login" />
+
+    <TextView
+        android:id="@+id/lblPrikaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
